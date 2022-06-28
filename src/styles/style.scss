@@ -1,0 +1,104 @@
+@import "./variables/variables.scss";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.362);
+  font-family: $font;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 3000px) {
+  html,
+  body,
+  ol,
+  ul,
+  button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    font-size: $fontSize;
+  }
+  h3 {
+    font-size: $fontSize;
+    font-family: $fontSubHeader;
+  }
+  h4 {
+    font-size: $fontSize + 5px;
+    font-family: $font;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  html,
+  body,
+  ol,
+  ul,
+  button {
+    font-size: $fontSize - 1px;
+  }
+  h3 {
+    font-size: $fontSize - 1px;
+  }
+  h4 {
+    font-size: $fontSize + 4px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  html,
+  body,
+  ol,
+  ul,
+  button {
+    font-size: $fontSize - 2px;
+  }
+  h3 {
+    font-size: $fontSize - 2px;
+  }
+  h4 {
+    font-size: $fontSize + 3px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  html,
+  body,
+  ol,
+  ul,
+  button {
+    font-size: $fontSize - 5px;
+  }
+  h3 {
+    font-size: $fontSize - 5px;
+  }
+  h4 {
+    font-size: $fontSize;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html,
+  body,
+  ol,
+  ul,
+  button {
+    font-size: $fontSize - 6px;
+  }
+  h3 {
+    font-size: $fontSize - 6px;
+  }
+  h4 {
+    font-size: $fontSize - 1px;
+  }
+}
+
+#tsparticles {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #1b1a1a 0%, #414141 74%) !important;
+}
+.particles {
+  position: absolute;
+  z-index: 1;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%) !important;
+}

@@ -1,0 +1,343 @@
+@font-face {
+  font-family: logoFont;
+  src: url("/src/media/fonts/RobotoMono-ExtraLight.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: mainHeaderFont;
+  src: url("/src/media/fonts/RobotoMono-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: subHeaderFont;
+  src: url("/src/media/fonts/RobotoMono-Italic.ttf") format("opentype");
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 100vh;
+  font-family: logoFont, helvetica, arial;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0.457)), color-stop(60%, rgba(0, 0, 0, 0.457)), to(#04619f68));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.457) 50%, rgba(0, 0, 0, 0.457) 60%, #04619f68 100%);
+}
+
+.contact .map-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contact .map-container iframe {
+  height: 70vh;
+  width: 80%;
+  margin: 10%;
+  border-radius: 15px;
+  border: 2px solid white;
+  opacity: 0.9;
+}
+
+.contact .map-container iframe .gm-style {
+  padding: 90px 40px 50px 60px;
+  background: #000;
+}
+
+.contact .map-container iframe:hover {
+  opacity: 1;
+}
+
+.contact .contact-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: logoFont, helvetica, arial;
+  position: relative;
+}
+
+.contact .contact-info .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  width: 100%;
+  margin: 10%;
+  font-size: 18px;
+}
+
+.contact .contact-info .form-container p,
+.contact .contact-info .form-container a {
+  font-family: subHeaderFont;
+  font-size: 16px;
+}
+
+.contact .contact-info .form-container h4 {
+  color: white;
+  font-family: mainHeaderFont;
+  font-size: 23px;
+}
+
+.contact .contact-info .form {
+  height: 70vh;
+  width: 80%;
+  margin: 10%;
+  border: 1px solid white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 3px white;
+          box-shadow: 0 0 3px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contact .contact-info .form .error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10%;
+  width: 100%;
+}
+
+.contact .contact-info .form .error h4 {
+  font-size: 16px;
+}
+
+.contact .contact-info .form button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.contact .contact-info .form button .exit {
+  color: white;
+  height: 35px;
+  width: 35px;
+  opacity: 0.7;
+  -webkit-filter: drop-shadow(0 0 1rem #069cc1);
+          filter: drop-shadow(0 0 1rem #069cc1);
+  z-index: 100;
+}
+
+.contact .contact-info .form button .exit:hover {
+  opacity: 1;
+}
+
+.contact .contact-info .form .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 20%;
+}
+
+.contact .contact-info .form .section label {
+  margin: 10px;
+  text-align: left;
+  width: 70%;
+  color: white;
+  font-size: 32px;
+}
+
+.contact .contact-info .form .section input,
+.contact .contact-info .form .section textarea {
+  color: white;
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: transparent;
+  -webkit-box-shadow: 0 0 3px white;
+          box-shadow: 0 0 3px white;
+}
+
+.contact .contact-info .form .section input::-webkit-input-placeholder,
+.contact .contact-info .form .section textarea::-webkit-input-placeholder {
+  font-family: logoFont, helvetica, arial;
+  color: white;
+  opacity: 0.6;
+}
+
+.contact .contact-info .form .section input:-ms-input-placeholder,
+.contact .contact-info .form .section textarea:-ms-input-placeholder {
+  font-family: logoFont, helvetica, arial;
+  color: white;
+  opacity: 0.6;
+}
+
+.contact .contact-info .form .section input::-ms-input-placeholder,
+.contact .contact-info .form .section textarea::-ms-input-placeholder {
+  font-family: logoFont, helvetica, arial;
+  color: white;
+  opacity: 0.6;
+}
+
+.contact .contact-info .form .section input::placeholder,
+.contact .contact-info .form .section textarea::placeholder {
+  font-family: logoFont, helvetica, arial;
+  color: white;
+  opacity: 0.6;
+}
+
+.contact .contact-info .form .section textarea {
+  height: 300px !important;
+}
+
+.contact .contact-info .form .submit {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-info .form .submit-form {
+  cursor: pointer;
+  font-size: 32px;
+  border: 1px solid white;
+  height: 60px;
+  width: 150px;
+  color: white;
+  background: transparent;
+}
+
+.contact .contact-info .form .submit-form:hover {
+  border: 2px solid white;
+}
+
+.contact .contact-info .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-info .details .icon {
+  color: #cae4ff;
+  -webkit-filter: drop-shadow(0 0 1rem #0881fb);
+          filter: drop-shadow(0 0 1rem #0881fb);
+}
+
+.contact .contact-info h4 {
+  color: white;
+  height: 0;
+  font-size: 32px;
+}
+
+.contact .contact-info a,
+.contact .contact-info p,
+.contact .contact-info button {
+  margin: 10px 3px;
+  font-family: logoFont, helvetica, arial;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.contact .contact-info .email-button {
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  height: 60px;
+  width: 150px;
+}
+
+.contact .contact-info .email-button:hover {
+  color: white;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact .contact-info {
+    width: 100%;
+    height: 60vh;
+  }
+  .contact .map-container iframe {
+    max-width: 700px;
+    height: 40vh;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

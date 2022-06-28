@@ -1,0 +1,457 @@
+@font-face {
+  font-family: logoFont;
+  src: url("/src/media/fonts/RobotoMono-ExtraLight.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: mainHeaderFont;
+  src: url("/src/media/fonts/RobotoMono-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: subHeaderFont;
+  src: url("/src/media/fonts/RobotoMono-Italic.ttf") format("opentype");
+}
+
+.review-container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: logoFont, helvetica, arial;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(0, 0, 0, 0.457)), color-stop(60%, rgba(0, 0, 0, 0.457)), to(#04619f68));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.457) 50%, rgba(0, 0, 0, 0.457) 60%, #04619f68 100%);
+}
+
+.review-container .review-info {
+  height: 100vh;
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-container .review-info h4 {
+  padding-top: 14vh;
+  color: white;
+  height: 0;
+  font-family: logoFont, helvetica, arial;
+}
+
+.review-container .review-info h3 {
+  font-family: logoFont, helvetica, arial;
+  width: 60%;
+  text-align: center;
+  color: white;
+}
+
+.review-container .review-info button {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  height: 60px;
+  width: 200px;
+}
+
+.review-container .review-info button:hover {
+  color: white;
+  border: 2px solid white;
+}
+
+.review-container .review-info button a {
+  color: #d1cbcb;
+  text-decoration: none;
+}
+
+.review-container .review-google {
+  height: 100vh;
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-container .review-google .swiper-slide {
+  text-align: center;
+  height: 55vh;
+  width: 70%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.review-container .review-google .mySwiper1 {
+  height: 55vh;
+  width: 70%;
+  max-width: 700px;
+}
+
+.review-container .review-google .mySwiper {
+  margin: 5% 0;
+  height: 18vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 15px;
+  width: 70%;
+  max-width: 700px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.review-container .review-google .mySwiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+}
+
+.review-container .review-google .mySwiper .swiper-slide-thumb-active {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.review-container .review-google .swiper-button-next,
+.review-container .review-google .swiper-button-prev {
+  color: white;
+  opacity: 1;
+  -webkit-transform: scale(0.7, 1);
+          transform: scale(0.7, 1);
+}
+
+.review-container .review-google .swiper-button-next:active,
+.review-container .review-google .swiper-button-prev:active {
+  opacity: 1;
+}
+
+.review-container .review-google .swiper-button-next:hover,
+.review-container .review-google .swiper-button-prev:hover {
+  opacity: 0.5;
+}
+
+.review-container .review-google .review-component {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: white 2px solid;
+  background: rgba(0, 0, 0, 0.457);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.1vw;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-container .review-google .review-component .google-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40%;
+  width: 100%;
+}
+
+.review-container .review-google .review-component .google-header .google-name {
+  font-weight: 900;
+  font-size: 1.2vw;
+  margin: 2%;
+}
+
+.review-container .review-google .review-component .google-header .google-img {
+  height: 60px;
+  width: 60px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+.review-container .review-google .review-component .google-header .google-stars .Full {
+  height: 50px;
+  width: 50px;
+  color: goldenrod;
+  -webkit-filter: drop-shadow(0 0 1rem #c19f06);
+          filter: drop-shadow(0 0 1rem #c19f06);
+}
+
+.review-container .review-google .review-component .review {
+  width: 75%;
+  max-height: 40%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.review-container .review-google .review-component .google-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+
+.review-container .review-google .review-component .google-footer img {
+  height: 30px;
+  width: 30px;
+}
+
+.review-container .review-google .review-component .google-footer .google-time {
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+.review-container .review-google .review-component1 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.6vw;
+  color: #cfcfcf;
+  text-decoration: none;
+  border-radius: 8px;
+  border: white 2px solid;
+  background: rgba(0, 0, 0, 0.457);
+  -webkit-box-shadow: 0 0 0.2rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
+          box-shadow: 0 0 0.2rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color), 0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-container .review-google .review-component1 .google-header1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 40%;
+}
+
+.review-container .review-google .review-component1 .google-header1 .google-name1 {
+  font-weight: 900;
+}
+
+.review-container .review-google .review-component1 .google-header1 .google-img1 {
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+.review-container .review-google .review-component1 .google-header1 .google-stars1 .Full {
+  height: 15px;
+  width: 15px;
+  color: goldenrod;
+  -webkit-filter: drop-shadow(0 0 1rem #c19f06);
+          filter: drop-shadow(0 0 1rem #c19f06);
+}
+
+.review-container .review-google .review-component1 .review1 {
+  width: 80%;
+  max-height: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.review-container .review-google .review-component1 .google-footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20%;
+}
+
+.review-container .review-google .review-component1 .google-footer1 img {
+  height: 15px;
+  width: 15px;
+}
+
+.review-container .review-google .review-component1 .google-footer1 .google-time1 {
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .review-container .review-google .mySwiper1,
+  .review-container .review-google .mySwiper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .review-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review-container .review-google {
+    width: 100%;
+    height: 70vh;
+  }
+  .review-container .review-google .mySwiper1,
+  .review-container .review-google .swiper-slide {
+    height: 50vh;
+    width: 90%;
+  }
+  .review-container .review-google .mySwiper {
+    height: 17vh;
+    width: 90%;
+  }
+  .review-container .review-google .review-component {
+    font-size: 1.6vw;
+  }
+  .review-container .review-info {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .review-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review-container .review-google {
+    width: 100%;
+    height: 70vh;
+  }
+  .review-container .review-google .mySwiper {
+    height: 15vh;
+  }
+  .review-container .review-google .review-component {
+    font-size: 1.8vw;
+  }
+  .review-container .review-info {
+    width: 100%;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .review-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review-container .review-info {
+    height: 40vh;
+  }
+  .review-container .review-info button {
+    padding: 20px;
+  }
+  .review-container .review-google {
+    width: 100%;
+    height: 70vh;
+  }
+  .review-container .review-google .mySwiper {
+    height: 14vh;
+    padding: 5px 5px;
+  }
+  .review-container .review-google .review-component {
+    font-size: 2.3vw;
+  }
+  .review-container .review-info {
+    width: 100%;
+    height: 30vh;
+  }
+}
+/*# sourceMappingURL=reviews.css.map */

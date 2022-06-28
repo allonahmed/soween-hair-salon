@@ -1,0 +1,201 @@
+@import "../variables/variables.scss";
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+.gallery {
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+  font-family: $font;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.457) 50%,
+    rgba(0, 0, 0, 0.457) 60%,
+    #04619f68 100%
+  );
+  .gallery-container {
+    width: 50%;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+
+    .swiper-slide {
+      text-align: center;
+      background: #000;
+      border-radius: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .swiper {
+      width: 80%;
+      max-width: 700px;
+      height: 15vh;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper2 {
+      height: 55vh;
+      width: 80%;
+      max-width: 700px;
+      border-radius: 100px;
+    }
+
+    .mySwiper {
+      height: 15vh;
+      box-sizing: border-box;
+      margin: 2% 0;
+      padding: 10px 10px;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      filter: grayscale(100%);
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+      filter: grayscale(0%);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: rgb(255, 255, 255);
+      opacity: 1;
+      transform: scale(0.7, 1);
+
+      &:active {
+        opacity: 0.5;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      overflow: hidden;
+    }
+  }
+
+  .gallery-info {
+    flex: 1;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+      padding-top: 14vh;
+      color: rgb(255, 255, 255);
+      height: 0;
+    }
+
+    h3 {
+      width: 60%;
+      text-align: center;
+      color: white;
+    }
+    button {
+      margin-top: 20px;
+      margin-bottom: 100px;
+      background: none;
+      color: white;
+      border: 1px solid white;
+      height: 60px;
+      width: 200px;
+      &:hover {
+        color: white;
+        border: 2px solid white;
+      }
+      a {
+        color: $primaryColor;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .gallery {
+    .gallery-container {
+      .swiper {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .gallery {
+    flex-direction: column-reverse;
+    .gallery-container {
+      width: 100%;
+      height: 70vh;
+      .swiper {
+        height: 50vh;
+      }
+      .mySwiper {
+        height: 15vh;
+      }
+    }
+    .gallery-info {
+      width: 100%;
+      height: 30vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery {
+    .gallery-info {
+      height: 40vh;
+      button {
+        padding: 20px;
+      }
+      h3 {
+        width: 80%;
+      }
+    }
+    .gallery-container {
+      .mySwiper {
+        height: 12vh;
+      }
+    }
+  }
+}

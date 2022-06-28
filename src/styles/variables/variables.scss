@@ -1,0 +1,28 @@
+@font-face {
+  font-family: logoFont;
+  src: url("/src/media/fonts/RobotoMono-ExtraLight.ttf") format("opentype");
+}
+@font-face {
+  font-family: mainHeaderFont;
+  src: url("/src/media/fonts/RobotoMono-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: subHeaderFont;
+  src: url("/src/media/fonts/RobotoMono-Italic.ttf") format("opentype");
+}
+$primaryColor: rgb(209, 203, 203);
+$secondaryColor: rgb(34, 34, 110);
+$backgroundColor: rgb(47, 45, 45);
+$fontSize: 18px;
+$font: logoFont, helvetica, arial;
+$fontMainHeader: mainHeaderFont;
+$fontSubHeader: subHeaderFont;
+
+// @media only screen and (max-width: 1000px) {
+//   html,
+//   body,
+//   ol,
+//   ul {
+//     font-size: calc($font - 7px);
+//   }
+// }
