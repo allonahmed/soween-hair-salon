@@ -1,0 +1,2 @@
+src/media/photos/IMG_2018.jpg filter=lfs diff=lfs merge=lfs -text
+src/media/photos/** filter=lfs diff=lfs merge=lfs -text
