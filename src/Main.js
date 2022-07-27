@@ -1,4 +1,3 @@
-import { Router, Route, Switch } from "react-router-dom";
 import Gallery from "./pages/Gallery.js";
 import Contact from "./pages/Contact";
 import Reviews from "./pages/Reviews";
@@ -10,14 +9,6 @@ import json from "./components/particle.json";
 import Footer from "./components/footer /footer";
 import React, { useState } from "react";
 
-const particlesInit = (main) => {
-  // console.log(main);
-};
-
-const particlesLoaded = (container) => {
-  // console.log(container);
-};
-
 export const Main = () => {
   const [clicked, isClicked] = useState(false);
   return (
@@ -26,8 +17,6 @@ export const Main = () => {
       <Particles
         className="particles"
         id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
         options={JSON.parse(json)}
       />
       <Home />
