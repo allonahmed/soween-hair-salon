@@ -1,11 +1,11 @@
 import "../styles/home/home.css";
 import { Fade } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 import { homeImages } from "../components/gallery.assets";
 
-// import style15 from "../media/photos/style15.JPG";
+import "react-slideshow-image/dist/styles.css";
 
 const Home = () => {
+
   const properties = {
     duration: 4000,
     autoplay: true,
@@ -31,7 +31,7 @@ const Home = () => {
         <h3>
           Soween Hair Salon is a black owned business, owned by Ngome Sow. Our
           goal is to provide the best haircare service for our beautiful
-          clients.{" "}
+          clients.
         </h3>
         <div>
           <button>
@@ -39,8 +39,9 @@ const Home = () => {
             <a
               href="https://go.booker.com/location/SoweenHairSalon/service-menu"
               target="_blank"
+              rel='noreferrer'
             >
-              Book Online{" "}
+              Book Online
             </a>
           </button>
         </div>
