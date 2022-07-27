@@ -6,8 +6,10 @@ import { Instagram, Facebook, Menu, Close } from "@mui/icons-material";
 
 
 const Header = props => {
+
   const [clicked, isClicked] = useState(false);
   const [headerBg, changeBg] = useState("transparent");
+
   const handleClick = () => {
     isClicked(!clicked);
   };
@@ -57,6 +59,7 @@ const Header = props => {
         <a
           href="https://www.google.com/maps/dir//Soween+Hair+Salon+466+Nostrand+Ave.+Brooklyn,+NY+11216/@40.6828979,-73.9503329,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c25b7e05dc867b:0xd7c4f49b3a5e3340!2m2!1d-73.9503329!2d40.6828979"
           target="_blank"
+          rel='noreferrer'
           className="nav-item visit-link"
           onClick={props.function}
         >
@@ -72,7 +75,7 @@ const Header = props => {
     }
     if (window.scrollY !== 0 || window.scrollX !== 0) {
       changeBg("rgba(9, 9, 9, 1)");
-    } else if (window.scrollY == 0) {
+    } else if (window.scrollY === 0) {
       changeBg("transparent");
     }
   });
@@ -91,6 +94,7 @@ const Header = props => {
             <a
               className="social-link"
               target="_blank"
+              rel='noreferrer'
               href="https://www.facebook.com/Soween-Hair-Salon-1343601922414087/"
             >
               <Facebook className="fa fa-facebook" />
@@ -101,6 +105,7 @@ const Header = props => {
             <a
               className="social-link"
               target="_blank"
+              rel='noreferrer'
               href="https://www.instagram.com/soweenhairsalon/?hl=en"
             >
               <Instagram className="fa fa-instagram" />
@@ -144,6 +149,7 @@ const Header = props => {
         <a
           className="book-link"
           target="_blank"
+          rel='noreferrer'
           href="https://go.booker.com/location/SoweenHairSalon/service-menu"
           alt="link to booker"
         >
