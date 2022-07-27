@@ -3,6 +3,8 @@ import "../../styles/header/header.css";
 import { HashLink as Link } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import { Instagram, Facebook, Menu, Close } from "@mui/icons-material";
+
+
 const Header = props => {
   const [clicked, isClicked] = useState(false);
   const [headerBg, changeBg] = useState("transparent");
@@ -110,10 +112,10 @@ const Header = props => {
         <a href="/" className="main-heading">
           <span
             style={{
-              textShadow: clicked
+              textShadow: props.default ? 'none' : clicked
                 ? "none"
                 : headerBg === "transparent" ? "0 0 3px #fff" : "none",
-              color: clicked
+              color: props.default ? "white" : clicked
                 ? "white"
                 : headerBg === "transparent" ? "black" : "white"
             }}
@@ -125,10 +127,10 @@ const Header = props => {
         <a href="#home" className="sub-heading">
           <span
             style={{
-              textShadow: clicked
+              textShadow: props.default ? 'none' : clicked
                 ? "none"
                 : headerBg === "transparent" ? "0 0 3px #fff" : "none",
-              color: clicked
+              color: props.default ? "white" : clicked
                 ? "white"
                 : headerBg === "transparent" ? "black" : "white"
             }}

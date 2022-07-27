@@ -20,7 +20,7 @@ function App() {
       <Router>
         <Switch>
           <Route path={"/african-braids"}>
-            <Header />
+            <Header default={true} />
             <Particles
               className="particles"
               id="tsparticles"
