@@ -35,7 +35,7 @@
         .fa {
           font-size: 30px;
           color: rgb(255, 255, 255);
-          margin-top: 7.5px;
+          // margin-top: 7.5px;
           transition: all 0.5s ease;
           text-shadow: 0 0 8px black;
         }
@@ -104,7 +104,7 @@
       font-size: $fontSize;
       color: white;
       margin-right: 40px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       text-shadow: -0.2rem -0.2rem 1rem rgb(37, 87, 161),
         0.2rem 0.2rem 1rem rgb(37, 87, 161), 0 0 2rem var(--neon-text-color),
         0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color),
@@ -135,6 +135,7 @@
       cursor: pointer;
       .fa {
         font-size: 30px;
+        color: white;
       }
       .fa-bars {
         transform: scaleX(3);
@@ -143,10 +144,6 @@
         animation: flip1 1s;
         color: white;
         text-shadow: 0 10px 30px #90a4cf;
-        text-shadow: -0.2rem -0.2rem 1rem rgb(37, 87, 161),
-          0.2rem 0.2rem 1rem rgb(37, 87, 161), 0 0 2rem var(--neon-text-color),
-          0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color),
-          0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
         &:hover {
           color: white;
         }
@@ -174,10 +171,6 @@
       .fa-times {
         color: $primaryColor;
         animation: flip2 1s;
-        text-shadow: -0.2rem -0.2rem 1rem rgb(37, 87, 161),
-          0.2rem 0.2rem 1rem rgb(37, 87, 161), 0 0 2rem var(--neon-text-color),
-          0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color),
-          0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
         &:hover {
           color: white;
         }
@@ -208,10 +201,6 @@ nav {
 
     &:hover {
       color: white;
-      text-shadow: -1rem 1rem 3rem rgb(37, 87, 161),
-        0.2rem 0.2rem 1rem rgb(37, 87, 161), 0 0 2rem var(--neon-text-color),
-        0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color),
-        0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
     }
   }
   .visit-link {
@@ -263,7 +252,7 @@ nav {
       margin: 0 30px;
       .book-link {
         font-size: $fontSize - 4px;
-        margin-bottom: 5px;
+        // margin-bottom: 5px;
       }
       .nav-button {
         .fa {
@@ -306,7 +295,7 @@ nav {
     .header-end {
       .book-link {
         font-size: $fontSize - 5px;
-        margin-bottom: 3px;
+        // margin-bottom: 3px;
         display: none;
       }
       .nav-button {
@@ -345,7 +334,7 @@ nav {
       margin: 0px 30px;
       .book-link {
         font-size: $fontSize - 5px;
-        margin-bottom: 3px;
+
         display: none;
       }
       .nav-button {

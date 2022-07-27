@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import "../../styles/header/header.css";
 import { HashLink as Link } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
-
-const Header = (props) => {
+import { Instagram, Facebook, Menu, Close } from "@mui/icons-material";
+const Header = props => {
   const [clicked, isClicked] = useState(false);
   const [headerBg, changeBg] = useState("transparent");
   const handleClick = () => {
     isClicked(!clicked);
   };
 
-  const Navigation = (props) => {
+  const Navigation = props => {
     return (
       <nav className="nav">
         <Link
@@ -32,7 +32,7 @@ const Header = (props) => {
         <NavLink
           to="/african-braids"
           className="nav-item"
-          // onClick={props.function}
+        // onClick={props.function}
         >
           African Braids
         </NavLink>
@@ -91,15 +91,7 @@ const Header = (props) => {
               target="_blank"
               href="https://www.facebook.com/Soween-Hair-Salon-1343601922414087/"
             >
-              <i
-                className="fa fa-facebook fa-2x"
-                aria-hidden="true"
-                style={
-                  {
-                    // color: headerBg === "transparent" ? "black" : "white"
-                  }
-                }
-              ></i>
+              <Facebook className="fa fa-facebook" />
             </a>
           </li>
 
@@ -109,15 +101,7 @@ const Header = (props) => {
               target="_blank"
               href="https://www.instagram.com/soweenhairsalon/?hl=en"
             >
-              <i
-                className="fa fa-instagram fa-2x"
-                aria-hidden="true"
-                style={
-                  {
-                    // color: headerBg === "transparent" ? "black" : "white"
-                  }
-                }
-              ></i>
+              <Instagram className="fa fa-instagram" />
             </a>
           </li>
         </ul>
@@ -128,14 +112,10 @@ const Header = (props) => {
             style={{
               textShadow: clicked
                 ? "none"
-                : headerBg === "transparent"
-                ? "0 0 3px #fff"
-                : "none",
+                : headerBg === "transparent" ? "0 0 3px #fff" : "none",
               color: clicked
                 ? "white"
-                : headerBg === "transparent"
-                ? "black"
-                : "white"
+                : headerBg === "transparent" ? "black" : "white"
             }}
           >
             SOW
@@ -147,14 +127,10 @@ const Header = (props) => {
             style={{
               textShadow: clicked
                 ? "none"
-                : headerBg === "transparent"
-                ? "0 0 3px #fff"
-                : "none",
+                : headerBg === "transparent" ? "0 0 3px #fff" : "none",
               color: clicked
                 ? "white"
-                : headerBg === "transparent"
-                ? "black"
-                : "white"
+                : headerBg === "transparent" ? "black" : "white"
             }}
           >
             Natural H
@@ -177,7 +153,7 @@ const Header = (props) => {
             isClicked(!clicked);
           }}
         >
-          <i className={!clicked ? "fa fa-bars" : "fa fa-times"}></i>
+          {!clicked ? <Menu className="fa fa-bars" /> : <Close className="fa fa-times" />}
         </button>
       </div>
       {clicked ? <Navigation function={handleClick} /> : ""}

@@ -73,7 +73,6 @@
 .header .header-start ul li .fa {
   font-size: 30px;
   color: white;
-  margin-top: 7.5px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   text-shadow: 0 0 8px black;
@@ -160,7 +159,7 @@
   font-size: 18px;
   color: white;
   margin-right: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-shadow: -0.2rem -0.2rem 1rem #2557a1, 0.2rem 0.2rem 1rem #2557a1, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
 }
 
@@ -191,6 +190,7 @@
 
 .header .header-end .nav-button .fa {
   font-size: 30px;
+  color: white;
 }
 
 .header .header-end .nav-button .fa-bars {
@@ -204,7 +204,6 @@
           animation: flip1 1s;
   color: white;
   text-shadow: 0 10px 30px #90a4cf;
-  text-shadow: -0.2rem -0.2rem 1rem #2557a1, 0.2rem 0.2rem 1rem #2557a1, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
 }
 
 .header .header-end .nav-button .fa-bars:hover {
@@ -267,7 +266,6 @@
   color: #d1cbcb;
   -webkit-animation: flip2 1s;
           animation: flip2 1s;
-  text-shadow: -0.2rem -0.2rem 1rem #2557a1, 0.2rem 0.2rem 1rem #2557a1, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
 }
 
 .header .header-end .nav-button .fa-times:hover {
@@ -307,7 +305,6 @@ nav .nav-item {
 
 nav .nav-item:hover {
   color: white;
-  text-shadow: -1rem 1rem 3rem #2557a1, 0.2rem 0.2rem 1rem #2557a1, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color), 0 0 10rem var(--neon-text-color);
 }
 
 nav .visit-link {
@@ -349,7 +346,6 @@ nav .visit-link {
   }
   .header .header-end .book-link {
     font-size: 14px;
-    margin-bottom: 5px;
   }
   .header .header-end .nav-button .fa {
     font-size: 24px;
@@ -376,7 +372,6 @@ nav .visit-link {
   }
   .header .header-end .book-link {
     font-size: 13px;
-    margin-bottom: 3px;
     display: none;
   }
   .header .header-end .nav-button .fa {
@@ -404,7 +399,6 @@ nav .visit-link {
   }
   .header .header-end .book-link {
     font-size: 13px;
-    margin-bottom: 3px;
     display: none;
   }
   .header .header-end .nav-button .fa {

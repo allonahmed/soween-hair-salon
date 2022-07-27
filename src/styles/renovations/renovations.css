@@ -125,6 +125,8 @@
 
 .renovations .inovations-video .react-player {
   position: absolute;
+  height: 65vh;
+  width: 90%;
   top: 0;
   left: 0;
   cursor: pointer;

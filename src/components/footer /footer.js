@@ -8,6 +8,8 @@ import {
   faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/footer/footer.css";
+import { Email } from '@mui/icons-material';
+import { Instagram, Facebook, YouTube, MailOutline, Google } from "@mui/icons-material";
 
 const Footer = () => {
   return (
@@ -21,6 +23,7 @@ const Footer = () => {
               href="https://www.facebook.com/Soween-Hair-Salon-1343601922414087/"
             >
               <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
+              <Facebook className="fa fa-facebook" />
             </a>
           </li>
 
@@ -31,6 +34,7 @@ const Footer = () => {
               href="https://www.instagram.com/soweenhairsalon/?hl=en"
             >
               <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              <Instagram className="fa fa-instagram" />
             </a>
           </li>
           <li>
@@ -40,6 +44,7 @@ const Footer = () => {
               href="https://www.google.com/search?hl=en-US&gl=us&q=Soween+Hair+Salon,+466+Nostrand+Ave.,+Brooklyn,+NY+11216&ludocid=15547820761126155072&lsig=AB86z5VOQ4sHvv8IL67p5_TkCvyx&hl=en&gl=US"
             >
               <i className="fa fa-google fa-2x" aria-hidden="true"></i>
+              <Google className="fa fa-google" />
             </a>
           </li>
           <li>
@@ -49,6 +54,7 @@ const Footer = () => {
               href="mailto: soweenbusiness@gmail.com"
             >
               <i className="fa fa-envelope fa-2x" aria-hidden="true"></i>
+              <MailOutline className="fa fa-envelope" />
             </a>
           </li>
           <li>
@@ -58,6 +64,7 @@ const Footer = () => {
               href="https://www.youtube.com/channel/UC8qBnSt-tmnKGISvnMHq6EA"
             >
               <i className="fa fa-youtube fa-2x" aria-hidden="true"></i>
+              <YouTube className='fa fa-youtube' />
             </a>
           </li>
         </ul>
@@ -106,7 +113,7 @@ const Footer = () => {
             <a href="tel:718-789-2655">+1 (718) 789-2655</a>
           </div>
           <div className="contact-container">
-            <i className="fa fa-envelope icon"></i>
+            <Email className="icon" />
             <a target="_blank" href="mailto: soweenbusiness@gmail.com">
               soweenbusiness@gmail.com
             </a>
